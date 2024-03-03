@@ -1,5 +1,6 @@
 body {
   font-family: 'Josefin Sans';
+  /* background-color: #cedcff; */
   background-color: #fbfbff;
 }
 
@@ -23,7 +24,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FF2625;
+  color: #1156FF;
   font-size: 25px;
   border-radius: 4px;
   position: absolute;
@@ -64,12 +65,15 @@ body {
 }
 
 .exercise-card {
-  width: 370px;
+  width: 300px;
   height: 420px;
   background: #fff;
-  
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; */
+  border-radius: 20px;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
@@ -77,17 +81,19 @@ body {
   padding-bottom: 10px;
   transform: scale(1, 1);
   transition: 0.3s all ease-in-out;
- box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .exercise-card img {
-  width: 300px;
+  height: 250px;
+  border-radius: 20px;
 }
 
 .bodyPart-card {
   transform: scale(1, 1);
   transition: 0.3s all ease-in-out;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .exercise-card:hover {
@@ -145,6 +151,7 @@ body {
 
 @media screen and (max-width:400px) {
   .exercise-card {
-    width: 280px;
+    width: 250px;
+    height: 400px;
   }
 }
